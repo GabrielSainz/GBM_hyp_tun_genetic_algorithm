@@ -1,0 +1,1 @@
+In this project, we will develop a genetic algorithm to optimize the hyperparameters in a GBM. 
