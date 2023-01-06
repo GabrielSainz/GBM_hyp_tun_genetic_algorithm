@@ -37,3 +37,9 @@ class GradientBoostingModel:
     
     def score(self, X, y):
         return 1 - prediction_error(y, self.predict(X))
+    
+    #To use gradient boosting model with our datasets we need to call the fit and predict methods.
+    model = GradientBoostingModel(n_estimators=100, learning_rate=0.1, max_depth=3)
+    model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
+
