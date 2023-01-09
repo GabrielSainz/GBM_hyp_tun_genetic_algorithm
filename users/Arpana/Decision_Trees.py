@@ -2,6 +2,7 @@ def prediction_error(y_true, y_pred):
     return np.mean((y_true - y_pred) ** 2)
     
 class DecisionTree:
+    #I need to add node function here. Just check it out.
     def __init__(self, max_depth=None):
         self.max_depth = max_depth
         
